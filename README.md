@@ -1,4 +1,4 @@
-# TrabalhoComputaçãoDistri
+# TrabalhoCompDistribuida
 
 Resolução dos Exercícios I da disciplina de Computação Distribuída (Prof. Nabor C.
 Mendonça), respondendo aos Exercícios 1.1, 1.2 e 1.3.
