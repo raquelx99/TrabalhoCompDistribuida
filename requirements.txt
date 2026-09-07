@@ -1,0 +1,5 @@
+pandas>=3.0
+matplotlib>=3.11
+pygame-ce>=2.5
+ipykernel>=7.0
+nbconvert>=7.17
