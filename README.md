@@ -8,7 +8,7 @@ Mendonça), respondendo aos Exercícios 1.1, 1.2 e 1.3.
 | Arquivo | Conteúdo |
 |---|---|
 | `trabalho-nabor-notebook.ipynb` | Exercício 1.2: cálculo analítico da fórmula de disponibilidade e simulador estocástico, com tabelas e gráficos. |
-| `main.py` | Exercício 1.2 (versão interativa/bônus): app desktop em `pygame` que roda o mesmo simulador estocástico ao vivo, com controles de n/k/p e um "jardim" de servidores. |
+| `main.py` | Exercício 1.2 (versão interativa): app desktop em `pygame` que roda o mesmo simulador estocástico ao vivo, com controles de n/k/p e um "jardim" de servidores. |
 | `assets/fonts/` | Fontes Baloo 2 e Nunito (licença SIL OFL) usadas pelo app. |
 | `requirements.txt` | Dependências Python do projeto. |
 

@@ -437,8 +437,8 @@ def main() -> None:
         )
 
         last = sim.history[-1] if sim.history else None
-        success = last[2] if last else True
         avail = last[1] if last else 0
+        success = last[2] if last else (avail >= sim.k)
         banner = pygame.Rect(WIDTH - 300, 18, 280, 66)
         draw_card(screen, banner, radius=banner.h // 2)
         if success:
