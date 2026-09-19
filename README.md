@@ -40,14 +40,7 @@ Deduzir a disponibilidade de um serviço replicado em `n` servidores, que exige 
 A disponibilidade do serviço é dada por:
 
 $$
-\boxed{
-A(n,k,p)
-=
-1-
-\sum_{i=0}^{k-1}
-\binom{n}{i}
-p^i(1-p)^{n-i}
-}
+\boxed{A(n,k,p) = 1 - \sum_{i=0}^{k-1} \binom{n}{i} p^i(1-p)^{n-i}}
 $$
 
 onde:
@@ -79,9 +72,7 @@ $$
 Como os estados dos servidores são independentes, a probabilidade dessa configuração específica é:
 
 $$
-p \cdot p \cdot (1-p)
-=
-p^2(1-p)
+p \cdot p \cdot (1-p) = p^2(1-p)
 $$
 
 Generalizando, se existem `n` servidores e exatamente `i` deles estão disponíveis, uma configuração específica terá `i` servidores disponíveis e `n-i` servidores indisponíveis.
@@ -110,17 +101,13 @@ Assim, é necessário determinar quantas maneiras existem de escolher `i` servid
 Como a ordem dos servidores escolhidos não importa, utiliza-se a combinação:
 
 $$
-\binom{n}{i}
-=
-\frac{n!}{i!(n-i)!}
+\binom{n}{i} = \frac{n!}{i!(n-i)!}
 $$
 
 Multiplicando a quantidade de configurações possíveis pela probabilidade de cada configuração, obtém-se a probabilidade de exatamente `i` servidores estarem disponíveis:
 
 $$
-P(X=i)
-=
-\binom{n}{i}p^i(1-p)^{n-i}
+P(X=i) = \binom{n}{i}p^i(1-p)^{n-i}
 $$
 
 onde `X` representa a quantidade de servidores disponíveis.
@@ -159,32 +146,21 @@ $$
 Logo, a probabilidade de o sistema estar indisponível é:
 
 $$
-P(X<k)
-=
-\sum_{i=0}^{k-1}
-\binom{n}{i}p^i(1-p)^{n-i}
+P(X<k) = \sum_{i=0}^{k-1} \binom{n}{i}p^i(1-p)^{n-i}
 $$
 
 Como a probabilidade total é igual a `1`, a disponibilidade do serviço é:
 
 $$
-A(n,k,p)
-=
-1-P(X<k)
+A(n,k,p) = 1-P(X<k)
 $$
 
 Substituindo a expressão anterior:
 
 $$
-\boxed{
-A(n,k,p)
-=
-1-
-\sum_{i=0}^{k-1}
-\binom{n}{i}
-p^i(1-p)^{n-i}
-}
+\boxed{A(n,k,p) = 1 - \sum_{i=0}^{k-1} \binom{n}{i} p^i(1-p)^{n-i}}
 $$
+
 ---
 
 ## Exercício 1.2 - Cálculo analítico e simulação estocástica
