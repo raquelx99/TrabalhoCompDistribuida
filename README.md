@@ -146,13 +146,13 @@ $$
 Logo, a probabilidade de o sistema estar indisponível é:
 
 $$
-P(X<k) = \sum_{i=0}^{k-1} \binom{n}{i}p^i(1-p)^{n-i}
+P(X \lt k) = \sum_{i=0}^{k-1} \binom{n}{i}p^i(1-p)^{n-i}
 $$
 
 Como a probabilidade total é igual a `1`, a disponibilidade do serviço é:
 
 $$
-A(n,k,p) = 1-P(X<k)
+A(n,k,p) = 1-P(X \lt k)
 $$
 
 Substituindo a expressão anterior:
